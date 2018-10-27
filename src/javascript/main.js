@@ -1,5 +1,9 @@
 window.onload = function() {
-	document.getElementsByTagName('h1')[0].onclick = function() {
-		console.log(this.innerHTML);
+	const name = 'BCIT';
+
+	const check = () => {
+		if (name.includes('CI')) { console.log('found CI') }
 	}
+
+	check();
 }
